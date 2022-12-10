@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutterenglishapp/profile_page.dart';
 
-import 'main_page.dart';
+import 'package:flutterenglishapp/views/favorites.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -13,12 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Main Page',
-      home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Main Page'),
-          ),
-          body: MyMainPage()),
+      title: 'Flutter Ankara English App',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.light(),
+      home: const Favorites(),
+
     );
   }
 }
