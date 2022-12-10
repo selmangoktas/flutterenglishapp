@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppbar({super.key, required this.title});
@@ -7,10 +6,10 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      systemOverlayStyle: SystemUiOverlayStyle.light,
+      //systemOverlayStyle: SystemUiOverlayStyle.light,
       elevation: 0,
       leading: IconButton(icon: const Icon(Icons.arrow_back_ios_new_outlined), onPressed: () {}),
-      backgroundColor: Colors.red[900],
+     // backgroundColor: Colors.red[900],
       title: Text(title),
     );
   }
